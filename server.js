@@ -57,11 +57,10 @@ app.use(
 );
 
 
-// 🔥 STATIC FOLDER FOR UPLOADED FILES
-app.use("/uploads", express.static(path.join(process.cwd(), "uploads")));
+
 
 /* =========================
-   ROUTES
+   ROUTES  
 ========================= */
 app.use("/api/auth", authRoutes);
 app.use("/api/hero", heroRoutes);
